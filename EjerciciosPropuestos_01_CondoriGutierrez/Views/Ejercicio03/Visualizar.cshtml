@@ -1,0 +1,24 @@
+﻿@model EjerciciosPropuestos_01_CondoriGutierrez.Models.ClsEjercicio03
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Visualizar</title>
+</head>
+<body>
+    <div>
+        <h1>Grados Centigrados a Grados Fahrenheit</h1>
+        <br /><br />
+        <label>Grados Centigrados: </label>@Model.centigrados<br />
+        <label>En Grados Fahrenheit es:  </label>@Model.resultado<br />
+        
+        <progress value="@(Model.resultado)" max="100"></progress>
+        
+        </div>
+</body>
+</html>
